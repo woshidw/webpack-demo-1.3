@@ -63,6 +63,12 @@ module.exports = {
           },
         ],
       },
+
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        use: ["file-loader"]//把文件变成文件路径
+        // type: 'asset/resource',
+      },
     ],
   },
 };
